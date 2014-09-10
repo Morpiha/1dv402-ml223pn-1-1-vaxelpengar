@@ -10,6 +10,7 @@ namespace _1_1_vaxelpengar
     {
         static void Main(string[] args)
         {
+
             double totalSum = 0;
             int givenSum = 0;
 

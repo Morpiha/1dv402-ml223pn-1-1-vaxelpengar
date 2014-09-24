@@ -15,6 +15,8 @@ namespace _1_1_vaxelpengar
             int givenSum = 0;
             uint subtotal = 0;
 
+
+
             //Anvigen total summa och belopp//
 
             while (true)
@@ -30,6 +32,10 @@ namespace _1_1_vaxelpengar
                     }
                     break;
                 }
+
+
+                //Fel meddelanden//
+
                 catch(OverflowException)
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
@@ -61,7 +67,11 @@ namespace _1_1_vaxelpengar
                     }
                     break;
                 }
-          
+
+
+
+                //Fel meddelanden//
+
                 catch(OverflowException)
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
@@ -75,6 +85,8 @@ namespace _1_1_vaxelpengar
                     Console.ResetColor();
                 }
             }
+
+
 
 
 
@@ -95,13 +107,61 @@ namespace _1_1_vaxelpengar
                 Console.WriteLine("---------------------------------");
 
 
+
+
+
                 //Pengar att få tillbaks
                 int payBack = (int)Math.Round(sumBack);
-                int count = payBack / 500;
-                int hundred = count / 100;
+                int amountOfCash;
+                int typeOfCash = 500;
+                amountOfCash = payBack / typeOfCash;
+                
+                //500 lappar//
+                if(amountOfCash > 0)
+                {
+                    Console.WriteLine("500-lappar          :   {0:0}", amountOfCash);
+                    payBack %= typeOfCash;
+                }
+                
+                //100-lappar//
+                typeOfCash = 100;
+                amountOfCash = payBack / typeOfCash;
+                
+                if (amountOfCash > 0)
+                {
+                    Console.WriteLine("100-lappar          :   {0:0}", amountOfCash);
+                    payBack %= typeOfCash;
+                }
 
-                Console.WriteLine("500-lappar          :   {0:0}", count);
-                Console.WriteLine("100-lappar          :   {0:0}", hundred);
+                //20-lappar//
+                typeOfCash = 20;
+                amountOfCash = payBack / typeOfCash;
+
+                if (amountOfCash > 0)
+                {
+                    Console.WriteLine("20-lappar           :   {0:0}", amountOfCash);
+                    payBack %= typeOfCash;
+                }
+
+                //5-kronor//
+                typeOfCash = 5;
+                amountOfCash = payBack / typeOfCash;
+
+                if (amountOfCash > 0)
+                {
+                    Console.WriteLine("5-kronor            :   {0:0}", amountOfCash);
+                    payBack %= typeOfCash;
+                }
+
+                //1-kronor//
+                typeOfCash = 1;
+                amountOfCash = payBack / typeOfCash;
+
+                if (amountOfCash > 0)
+                {
+                    Console.WriteLine("1-kronor            :   {0:0}", amountOfCash);
+                    payBack %= typeOfCash;
+                }
 
             }
         }

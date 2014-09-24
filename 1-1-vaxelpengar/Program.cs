@@ -117,51 +117,51 @@ namespace _1_1_vaxelpengar
                 amountOfCash = payBack / typeOfCash;
                 
                 //500 lappar//
-                if(amountOfCash > 0)
-                {
-                    Console.WriteLine("500-lappar          :   {0:0}", amountOfCash);
-                    payBack %= typeOfCash;
-                }
+                    if(amountOfCash > 0)
+                    {
+                        Console.WriteLine("500-lappar          :   {0:0}", amountOfCash);
+                        payBack %= typeOfCash;
+                    }
                 
                 //100-lappar//
                 typeOfCash = 100;
                 amountOfCash = payBack / typeOfCash;
                 
-                if (amountOfCash > 0)
-                {
-                    Console.WriteLine("100-lappar          :   {0:0}", amountOfCash);
-                    payBack %= typeOfCash;
-                }
+                    if (amountOfCash > 0)
+                    {
+                        Console.WriteLine("100-lappar          :   {0:0}", amountOfCash);
+                        payBack %= typeOfCash;
+                    }
 
                 //20-lappar//
                 typeOfCash = 20;
                 amountOfCash = payBack / typeOfCash;
 
-                if (amountOfCash > 0)
-                {
-                    Console.WriteLine("20-lappar           :   {0:0}", amountOfCash);
-                    payBack %= typeOfCash;
-                }
+                    if (amountOfCash > 0)
+                    {
+                        Console.WriteLine("20-lappar           :   {0:0}", amountOfCash);
+                        payBack %= typeOfCash;
+                    }
 
                 //5-kronor//
                 typeOfCash = 5;
                 amountOfCash = payBack / typeOfCash;
 
-                if (amountOfCash > 0)
-                {
-                    Console.WriteLine("5-kronor            :   {0:0}", amountOfCash);
-                    payBack %= typeOfCash;
-                }
+                    if (amountOfCash > 0)
+                    {
+                        Console.WriteLine("5-kronor            :   {0:0}", amountOfCash);
+                        payBack %= typeOfCash;
+                    }
 
                 //1-kronor//
                 typeOfCash = 1;
                 amountOfCash = payBack / typeOfCash;
 
-                if (amountOfCash > 0)
-                {
-                    Console.WriteLine("1-kronor            :   {0:0}", amountOfCash);
-                    payBack %= typeOfCash;
-                }
+                    if (amountOfCash > 0)
+                    {
+                        Console.WriteLine("1-kronor            :   {0:0}", amountOfCash);
+                        payBack %= typeOfCash;
+                    }
 
             }
         }
